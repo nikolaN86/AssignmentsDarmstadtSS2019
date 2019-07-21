@@ -1,0 +1,25 @@
+Task2a.c
+#include <stdio.h>
+int main()
+{
+        printf("Hello, world!\n");
+        
+        return 0;
+}
+
+
+Task2b.c
+#include <stdio.h>
+#include <stdlib.h>
+#include "output.h"
+int main(int argc, char** argv)
+{
+        int testInteger=atoi(argv[1]);
+        printf("Numbers are: ");
+        int i;
+        for(i=1; i<=testInteger; i++)
+        {
+                outputT2(i);
+        }
+        return 0;
+}
