@@ -1,0 +1,3 @@
+Solution:
+Include directives use <x.h> (brackets) to indicate that the compiler should look in a “standard” place, such as /usr/include/…
+They use “x.h” (double quotes) to indicate that it should look first in the current directory
