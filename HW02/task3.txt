@@ -1,0 +1,7 @@
+5
+5
+6
+At x=A(x), we pass a copy of value stored under symbol x. Function A gets this copy, increment it and return a copy of value x which is than assigned to x which is defined in main function, therefore x=5.
+At A(x) a copy of x is passed to function, function increment this value which is returned but is not assigned. Therefore, after this line x=5.
+At B(&x) we are passing address of variable x to the function B. In function B, pointer to integer is required and in y is stored address of passed argument. Then this address is changed to memory location 10. However value stored at variable y is not changed.
+At C(&x) address of variable x is passed to the function. Function has as input value pointer to integer. In the function with dereferencing pointer with *y value in y is set to  6.
