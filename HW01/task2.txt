@@ -1,0 +1,7 @@
+Solution to Task 2:
+a)	/srv/home/nnesic
+b)	-bash
+c)	ls –help    gives us a listing with possible flags and their meaning
+ls –a		check hidden files and folders
+d)	1040
+e)	Modules Release 4.0.0 (2017-10-16)
