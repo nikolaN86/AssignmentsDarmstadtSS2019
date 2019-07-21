@@ -1,0 +1,6 @@
+Solution to Task 3.
+A)	Vim
+B)	Esc to exit writing mode and then :x or :x! or :wq!  to save a file.
+C)	(i) P to paste before the cursor, or p to paste after
+    (ii) V to select whole line, and that y to copy it
+    (iii) type the / or ? key, followed by the word we are searching for.
