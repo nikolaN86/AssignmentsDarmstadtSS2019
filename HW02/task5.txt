@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "output.h"
+
+int int_sorter(const void *first_arg, const void *second_arg) {
+  // cast the pointers to the right type
+  int first = *(int *)first_arg;
+  int second = *(int *)second_arg;
+  // carry out the comparison
+  if (first < second) {
+    return -1;
+  } else if (first == second) {
+    return 0;
+  } else {
+    return 1;
+  }
+}
+
+int main(int argc, char *argv[]) {
+    if (argc != 2) {
+        printf("Need one argument to play.\n");
+        exit(1);
+    }
+    int arg1 = atoi(argv[1]); // argv[0] is the program name
+    if (arg1<0 || arg1>100) {
+            printf("Integer value must be between 0 and 100 to play.\n");
+            exit(1);
+    }
+    int *storageArray = (int *)malloc(arg1 * sizeof(int));
+    int array[arg1];
+    int i;
+    /* fill array; from largest to smallest */
+    for (i = 0; i < arg1; ++i) {
+        array[i] = arg1 - i;
+    }
+
+    // get entries rearranged
+    qsort(array, arg1, sizeof(int), int_sorter);
+    /*for (i = 0; i < arg1; ++i) {
+        printf("%d\n", array[i]);
+    }*/
+    outputT5(array, arg1);
+    free(storageArray);
+    return 0;
+}
+
